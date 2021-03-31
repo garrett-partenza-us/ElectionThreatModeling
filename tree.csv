@@ -1,0 +1,345 @@
+O,0,,root,,
+A,1,, attack voting equipment ,,
+O,1.1,, gather knowledge,,
+T, 1.1.1,X1, from insider,0.068888889,2
+A, 1.1.2,, from components,,
+O, 1.1.2.1,, access directly,,
+T, 1.1.2.1.1,X2, infiltrate as insider,0.063333333,2
+T, 1.1.2.1.2,X3, obtain a machine,0.05,2
+T, 1.1.2.1.3,X4, legally acquire machine,0.072222222,2
+T, 1.1.2.1.4,X5, study a machine in transit,0.061111111,1
+T, 1.1.2.1.5,X6, find source code,0.066666667,2
+T, 1.1.2.1.6,X7, compromise existing source code escrow,0.043333333,2
+T, 1.1.2.2,X8, directly examine ,0.077777778,2
+T, 1.1.3,X9, from published reports,0.2,1
+O,1.2,, gain insider access,,
+T, 1.2.1,X10, at voting system vendor,0.072222222,1
+T, 1.2.2,X11, in supply chain,0.066666667,1
+T, 1.2.3,X12, in elections org,0.061111111,2
+T, 1.2.4,X13, by illegal insider entry,0.04,2
+T, 1.2.5,X14, by remote network access,0.061111111,2
+O,1.3,, attack component,,
+O, 1.3.1,, attack hardware,,
+T, 1.3.1.1,X15, jam PCOS scanner,0.061111111,2
+T, 1.3.1.2,X16, attack scanner with goop pen ,0.066666667,2
+O, 1.3.1.3,, attack stored components,,
+T, 1.3.1.3.1,X17, swap boot media,0.04,2
+T, 1.3.1.3.2,X18, attack install,0.096666667,1
+T, 1.3.1.3.3,X19, destroy Removable Media ,0.043333333,2
+A, 1.3.2,, attack software,,
+T, 1.3.2.1,X20, develop malware ,0.077777778,2
+O, 1.3.2.2,, select targets,,
+T, 1.3.2.2.1,X21, select precincts by expected voting pattern ,0.122222222,2
+T, 1.3.2.2.2,X22, select all precincts,0.155555556,2
+O, 1.3.2.3,, inject malware,,
+T, 1.3.2.3.1,X23, by remote bug exploitation,0.072222222,2
+T, 1.3.2.3.2,X24, by local bug exploitation,0.061111111,2
+T, 1.3.2.3.3,X25, by human interface exploit,0.061111111,2
+O, 1.3.2.4,, execute malware,,
+T, 1.3.2.4.1,X26, that alters artifact directly,0.052222222,2
+T, 1.3.2.4.2,X27, that self-propagates,0.077777778,2
+T, 1.3.2.4.3,X28, that remains resident ,0.077777778,2
+O, 1.3.2.5,, mitigate risk of detection,,
+T, 1.3.2.5.1,X29, coerce testing staff,0.061111111,2
+T, 1.3.2.5.2,X30, attack after testing,0.066666667,2
+T, 1.3.2.5.3,X31, obtain cooperation of testers,0.055555556,2
+T, 1.3.2.5.4,X32, access testing scripts ,0.072222222,2
+O, 1.3.2.6,, use infected component,,
+O, 1.3.2.6.1,, supply cryptic knock,,
+T, 1.3.2.6.1.1,X33, during logic and accuracy testing,0.061111111,1
+T, 1.3.2.6.1.2,X34, during machine setup,0.066666667,1
+T, 1.3.2.6.1.3,X35, during voting,0.072222222,2
+T, 1.3.2.6.1.4,X36, as anti-knock,0.061111111,1
+T, 1.3.2.6.1.5,X37, using AC power flicker,0.055555556,1
+T, 1.3.2.6.1.6,X38, to detect realistic patterns of voting,0.088888889,1
+T, 1.3.2.6.1.7,X39, to employ calendar/clock tricks,0.077777778,1
+T, 1.3.2.6.1.8,X40, in ballot definition files,0.072222222,1
+O, 1.3.2.6.2,, control/parameterize attack,,
+T, 1.3.2.6.2.1,x41, voter enables attack as attacker ,0.055555556,2
+T, 1.3.2.6.2.2,x42,"	enable by unknowing voter",0.061111111,2
+T, 1.3.2.6.2.3,x43, enable by technical consultant ,0.055555556,2
+T, 1.3.2.6.2.4,x44, employ unparameterized attack ,0.061111111,2
+T, 1.3.2.6.2.5,x45, add commands to ballot def file,0.048888889,2
+O, 1.3.3,, attack data,,
+O, 1.3.3.1,, using malware,,
+O, 1.3.3.1.1,, select method and alter,,
+T, 1.3.3.1.1.1,X46, by malware,0.055555556,2
+T, 1.3.3.1.1.2,X47, by infected software,0.055555556,2
+T, 1.3.3.1.1.3,X48, by infected config data ,0.055555556,2
+T, 1.3.3.1.2,X49, alter ballot definition file,0.048888889,2
+T, 1.3.3.1.3,X50, alter device tallies ,0.05,2
+T, 1.3.3.1.4,X51, alter tabulation SW,0.052222222,2
+O, 1.3.3.2,, modify data on storage medium ,,
+T, 1.3.3.2.1,X52, modify tabulation data,0.052222222,2
+O, 1.3.3.2.2,, modify data before use,,
+T, 1.3.3.2.2.1,X53, pre-load votes,0.05555556,1
+T, 1.3.3.2.2.2,X54, flip votes,0.05555556,1
+T, 1.3.3.2.2.3,X55, alter config data ,0.06666667,1
+O, 1.3.4,, attack comlinks,,
+T, 1.3.4.1,X56, attack linked scanner/tabulator ,0.105555556,2
+T, 1.3.4.2,X57, attack wireless,0.072222222,2
+A,2,, perform insider attack,,
+O,2.1,, form inside attack team,,
+T, 2.1.1,X58, infiltrate as volunteer pollworker ,0.077777778,2
+T, 2.1.2,X59, infiltrate as observer,0.063333333,2
+T, 2.1.3,X60, staff with attackers,0.061111111,2
+T, 2.1.4,X61, collude with other insiders ,0.052222222,2
+T, 2.1.5,X62, allow pollworker rotation,0.055555556,2
+O,2.2,, execute insider attack,,
+O, 2.2.1,, attack at polling place,,
+O, 2.2.1.1,, discourage voters,,
+O, 2.2.1.1.1,, challenge at CheckIn,,
+T, 2.2.1.1.1.1,X63, falsely reject voter registration,0.083333333,2
+T, 2.2.1.1.1.2,X64, falsely reject id check,0.061111111,2
+T, 2.2.1.1.1.3,X65, selectively challenge voters,0.077777778,2
+T, 2.2.1.1.1.4,X66, falsely challenge voters on target list,0.077777778,2
+T, 2.2.1.1.1.5,X67, destroy registered cards,0.061111111,2
+T, 2.2.1.1.2,X68, delay open/close with excuses ,0.077777778,2
+T, 2.2.1.1.3,X69, create long lines,0.066666667,2
+T, 2.2.1.1.4,X70, stymie voters needing assistance ,0.116666667,2
+T, 2.2.1.1.5,X71, issue incorrect ballot style,0.077777778,2
+T, 2.2.1.1.6,X72, mislead w/phony ballot change ,0.068888889,2
+T, 2.2.1.1.7,X73, mislead w/one party only ruse ,0.068888889,2
+T, 2.2.1.1.8,X74, discourage provisional voting ,0.077777778,2
+T, 2.2.1.1.9,X75, impede voter access,0.066666667,2
+T, 2.2.1.1.10,X76, persuade voter selections ,0.072222222,2
+A, 2.2.1.2,, alter voter's vote,,
+O, 2.2.1.2.1,, access ballots to alter votes,,
+T, 2.2.1.2.1.1,X77, obtain VotableBallot ,0.133333333,2
+O, 2.2.1.2.1.2,, obtain MarkedBallot,,
+T, 2.2.1.2.1.2.1,X78, jam / shutdown machine,0.077777778,2
+T, 2.2.1.2.1.2.2,X79, mislead about committing ballot ,0.066666667,2
+T, 2.2.1.2.1.2.3,X80, collect ballots from voters,0.077777778,2
+A, 2.2.1.2.1.3,, steal provisional ballot,,
+T, 2.2.1.2.1.3.1,X81, force provisional vote,0.066666667,2
+T, 2.2.1.2.1.3.2,X82, obtain provisional ballot ,0.088888889,2
+T, 2.2.1.2.1.4,X83, obtain ballot of assisted voter,0.072222222,2
+O, 2.2.1.2.2,, tamper with ballots,,
+A, 2.2.1.2.2.1,, subvert no-show vote,,
+O, 2.2.1.2.2.1.1,, conceal pollbook tampering ,,
+T, 2.2.1.2.2.1.1.1,X84, wait until polls close,0.061111111,2
+T, 2.2.1.2.2.1.1.2,X85, target unlikely voter,0.077777778,2
+T, 2.2.1.2.2.1.1.3,X86, make excuses for marked pollbook,0.066666667,2
+T, 2.2.1.2.2.1.2,X87, mark VotableBallot ,0.077777778,2
+T, 2.2.1.2.2.1.3,X88, tamper with pollbook,0.077777778,2
+O, 2.2.1.2.2.2,, subvert MarkedBallot of voter,,
+T, 2.2.1.2.2.2.1,X89, mark undervote to create vote ,0.066666667,2
+T, 2.2.1.2.2.2.2,X90, mark vote to create overvote,0.066666667,2
+T, 2.2.1.2.2.2.3,X91, swap ballot with new MarkedBallot ,0.066666667,2
+T, 2.2.1.2.3,X92, commit subverted ballot,0.052222222,2
+O, 2.2.2,, attack other than polls ,,
+A, 2.2.2.1,, attack ballots,,
+T, 2.2.2.1.1,X93, access ballots ,0.063333333,1
+O, 2.2.2.1.2,, tamper with ballots,,
+T, 2.2.2.1.2.1,X94, with unobtrusive defects,0.105555556,2
+T, 2.2.2.1.2.2,X95, with faint pre-marks,0.061111111,1
+T, 2.2.2.1.2.3,X96, with invisible ink pre-marks,0.066666667,1
+T, 2.2.2.1.2.4,X97, by subverting ballot rotation,0.077777778,2
+T, 2.2.2.1.2.5,X98, by marking ballot,0.055555556,2
+T, 2.2.2.1.2.6,X99, with invalidating marks,0.061111111,2
+T, 2.2.2.1.2.7,X100, by undoing voter marks,0.066666667,2
+T, 2.2.2.1.2.8,X101, by subverting provisional envelope,0.077777778,2
+T, 2.2.2.1.2.9,X102, with physical damage ,0.052222222,2
+O, 2.2.2.1.3,, replace ballots,,
+T, 2.2.2.1.3.1,X103, switch valid ballots with tampered ones ,0.048888889,2
+T, 2.2.2.1.3.2,X104, switch box during transport,0.08,3
+T, 2.2.2.1.3.3,X105, discard / destroy MarkedBallots ,0.083333333,2
+T, 2.2.2.2,X106, stuff ballots after closing,0.072222222,3
+T, 2.2.2.3,X107, stuff during canvass or recount ,0.072222222,3
+T, 2.2.2.4,X108, selectively recount,0.061111111,3
+T, 2.2.2.5,X109, subvert tabulation,0.061111111,3
+O, 2.2.2.6,, attack tabulated results,,
+T, 2.2.2.6.1,X110, subvert reported results ,0.083333333,3
+T, 2.2.2.6.2,X111, falsely announce results ,0.105555556,3
+T, 2.2.2.6.3,X112, alter results transmission,0.077777778,3
+A,3,, subvert voting process,,
+O,3.1,, target polling places,,
+T, 3.1.1,X113, by expected voting pattern,0.122222222,2
+T, 3.1.2,X114, where PollWorkers not likely to know Voters ,0.055555556,2
+T, 3.1.3,X115, that exploit electoral college rules,0.061111111,2
+T, 3.1.4,X116, where PollWorkers can be co-opted ,0.072222222,2
+T, 3.1.5,X117, with lax enforcement of procedures,0.113333333,2
+O,3.2,, form attack team,,
+A, 3.2.1,, use cell captains,,
+T, 3.2.1.1,X118, recruit cell captains,0.048888889,2
+T, 3.2.1.2,X119, motivate cell captains ,0.061111111,2
+T, 3.2.1.3,X120, educate cell captains,0.055555556,2
+T, 3.2.1.4,X121, provide rewards for cell captains to distribute ,0.083333333,2
+T, 3.2.1.5,X122, recruit attackers,0.08,2
+T, 3.2.2,X123, recruit attackers among LegalVoters ,0.055555556,2
+T, 3.2.3,X124, recruit brokers,0.052222222,2
+O,3.3,, commit vote fraud attack ,,
+A, 3.3.1,, perform chain vote,,
+T, 3.3.1.1,X125, acquire VotableBallot,0.072222222,2
+T, 3.3.1.2,X126, vote with pre-marked ballot ,0.066666667,2
+T, 3.3.1.3,X127, smuggle VotableBallot out,0.061111111,2
+O, 3.3.2,, perform impersonation attack,,
+O, 3.3.2.1,, create fraudulent voter registrations ,,
+T, 3.3.2.1.1,X128, register as an housemate ,0.052222222,1
+T, 3.3.2.1.2,X129, register as a dead person,0.077777778,1
+T, 3.3.2.1.3,X130, register an ineligible person ,0.052222222,1
+T, 3.3.2.1.4,X131, register as a fictitious person,0.057777778,1
+O, 3.3.2.2,, create target list of voters to impersonate ,,
+T, 3.3.2.2.1,X132, fraudulent registrations,0.043333333,1
+T, 3.3.2.2.2,X133, unlikely voters,0.072222222,1
+T, 3.3.2.2.3,X134, voters likely to vote late in the day ,0.052222222,1
+A, 3.3.2.3,, execute impersonated voting,,
+T, 3.3.2.3.1,X135, assign impersonator to voter,0.066666667,2
+T, 3.3.2.3.2,X136, go to target voter's polling place,0.15,2
+T, 3.3.2.3.3,X137, check in as the impersonated voter ,0.077777778,2
+T, 3.3.2.3.4,X138, vote in place of voter,0.066666667,2
+T, 3.3.2.3.5,X139, supply rewards ,0.083333333,2
+A, 3.3.3,, buy or coerce vote,,
+O, 3.3.3.1,, motivate voter ,,
+O, 3.3.3.1.1,, pay ,,
+O, 3.3.3.1.1.1,, pay for candidate support,,
+T, 3.3.3.1.1.1.1,X140, use drugs/ alcohol as payment ,0.077777778,2
+T, 3.3.3.1.1.1.2,X141, pay voters cash,0.077777778,2
+T, 3.3.3.1.1.2,X142, promise to pay ,0.111111111,2
+O, 3.3.3.1.2,, coerce,,
+T, 3.3.3.1.2.1,X143, promise to punish,0.077777778,2
+T, 3.3.3.1.2.2,X144, punish and promise more ,0.061111111,2
+T, 3.3.3.1.2.3,X145, punish and promise repair,0.061111111,2
+O, 3.3.3.2,, direct voters,,
+T, 3.3.3.2.1,X146, to make specific votes,0.077777778,2
+T, 3.3.3.2.2,X147, to not make specific votes ,0.077777778,2
+O, 3.3.3.3,, verify bought vote,,
+T, 3.3.3.3.1,X148, by self-recorded casting,0.077777778,2
+T, 3.3.3.3.2,X149, with phony voter assistant ,0.055555556,2
+T, 3.3.3.3.3,X150, with encoded stray marks,0.072222222,2
+T, 3.3.3.3.4,X151, through PollWorker ballot chaining ,0.066666667,2
+T, 3.3.3.4,X152, supply rewards or punishment,0.061111111,2
+O, 3.3.4,, vote more than once,,
+T, 3.3.4.1,X153, vote using more than one method ,0.046666667,2
+T, 3.3.4.2,X154, vote in more than one place,0.068888889,2
+T, 3.3.4.3,X155, insert unauthorized physical ballots into the ballot box ,0.072222222,2
+O,4,, experience technical failure,,
+O,4.1,, experience operational error,,
+T, 4.1.1,X156, by miscalibrating scanner ,0.1,1
+T, 4.1.2,X157, due to foreign substances ,0.061111111,2
+T, 4.1.3,X158, through erroneous settings,0.077777778,2
+T, 4.1.4,X159, by mismatching precinct and actual ,0.08,2
+T, 4.1.5,X160, in software from bad data,0.066666667,2
+T, 4.1.6,X161, causing hardware failure ,0.061111111,2
+T, 4.1.7,X162, causing device failure,0.046666667,2
+T, 4.1.8,X163, due to manufacturer error,0.15,1
+O,4.2,, experience undetected tabulation errors ,,
+T, 4.2.1,X164, due to excessive variance,0.105555556,3
+T, 4.2.2,X165, in straight-party vote tabulation,0.122222222,3
+T, 4.2.3,X166, due to improper tabulation technique ,0.122222222,3
+T, 4.2.4,X167, due to software error,0.077777778,3
+T, 4.2.5,X168, from mistakes by ballot designer,0.105555556,3
+T, 4.2.6,X169, due to flawed ballot creation software ,0.077777778,3
+T, 4.2.7,X170, by omitting tallies from totals,0.061111111,3
+T, 4.2.8,X171, by adding tallies multiple times,0.122222222,3
+T, 4.2.9,X172, from simultaneous multiple scan feeding tabulator ,0.116666667,3
+O,4.3,, experience errors in ballot preparation,,
+T, 4.3.1,X173, encode incorrect contest counting rule,0.072222222,1
+T, 4.3.2,X174, incorrectly map candidate's mark position ,0.077777778,1
+T, 4.3.3,X175, supply erroneous ballot definition data,0.046666667,1
+T, 4.3.4,X176, supply erroneous voting equipment data ,0.057777778,1
+T, 4.3.5,X177, misconfigure ballot by operator,0.072222222,1
+T,4.4,X178, fail to warn voter of overvotes / undervotes ,0.116666667,2
+T,4.5,X179, failure of batteries,0.083333333,2
+O,5,, commit errors in operations,,
+O,5.1,, commit errors in polling place operations ,,
+O, 5.1.1,, unintentionally discourage voting,,
+T, 5.1.1.1,X180, create long lines by working slowly,0.066666667,2
+T, 5.1.1.2,X181, mistakenly challenge voters at CheckIn ,0.122222222,2
+T, 5.1.1.3,X182, delay opening or closing,0.083333333,2
+T, 5.1.1.4,X183, delay voters with poor assistance ,0.15,2
+T, 5.1.1.5,X184, send voter to wrong place,0.15,2
+T, 5.1.1.6,X185, require provisional by mistake ,0.088888889,2
+T, 5.1.2,X186, supply incompatible marking device,0.105555556,2
+O, 5.1.3,, misinform about overvoting / undervoting ,,
+T, 5.1.3.1,X187, allow undervotes without warning ,0.133333333,2
+T, 5.1.3.2,X188, allow overvotes without warning ,0.133333333,2
+T, 5.1.3.3,X189, encourage voter override,0.088888889,2
+O, 5.1.4,, issue erroneous VotableBallot,,
+T, 5.1.4.1,X190, of the incorrect ballot style,0.055555556,2
+T, 5.1.4.2,X191, with errors in contests or candidates ,0.122222222,2
+T, 5.1.4.3,X192, with errors in selection rules,0.077777778,2
+O, 5.1.5,, confuse voters with poor ballot design ,,
+T, 5.1.5.1,X193, by splitting contests up,0.111111111,1
+T, 5.1.5.2,X194, by spreading response options ,0.077777778,1
+T, 5.1.5.3,X195, with complete-the-arrow,0.055555556,1
+T, 5.1.5.4,X196, by keeping disqualified candidates ,0.088888889,1
+T, 5.1.5.5,X197, with inconsistent formats,0.061111111,1
+T, 5.1.5.6,X198, by omitting useful shading ,0.061111111,1
+T, 5.1.5.7,, by omitting use of bold,0.01,
+T, 5.1.5.8,X199, with complex instructions ,0.055555556,1
+T, 5.1.5.9,, with distant instructions,0.01,
+T, 5.1.5.10,X200, with no correction guidance,0.096666667,1
+T, 5.1.5.11,X201, force least-objectionable choice ,0.072222222,1
+T, 5.1.5.12,X202, publish invalid sample ballots,0.061111111,1
+O, 5.1.6,, mishandle ballots,,
+T, 5.1.6.1,X203, lose ballots by accident,0.105555556,2
+T, 5.1.6.2,X204, abuse ballots by accident,0.066666667,2
+T, 5.1.6.3,X205, stuff/swap/lose the ballot box ,0.105555556,2
+T, 5.1.6.4,X206, run out of ballots,0.096666667,2
+O,5.2,, make mistakes in ballot adjudication,,
+T, 5.2.1,X207, incorrectly accept provisional ballots ,0.155555556,2
+T, 5.2.2,X208, incorrectly reject provisional ballots ,0.155555556,2
+T, 5.2.3,X209, reject ballots without retry,0.155555556,2
+O,6,, attack audit,,
+O,6.1,, attack election evidence,,
+T, 6.1.1,X210, destroy ElectionArtifacts,0.046666667,3
+T, 6.1.2,X211, mishandle ElectionArtifacts ,0.055555556,3
+T, 6.1.3,X212, add new fraudulent evidence ,0.055555556,3
+O, 6.1.4,, modify ElectionArtifacts,,
+A, 6.1.4.1,, modify deliberately,,
+T, 6.1.4.1.1,X213, replace paper tape with fraud,0.072222222,3
+T, 6.1.4.1.2,X214, rewrite data on Removable Media ,0.066666667,3
+T, 6.1.4.2,X215, modify unintentionally,0.122222222,3
+T, 6.1.4.3,X216, modify deliberately by computer,0.061111111,3
+T, 6.1.4.4,X217, modify unintentionally by computer ,0.077777778,3
+T, 6.1.4.5,X218, modify via malware attack,0.066666667,3
+T, 6.1.4.6,X219, modify via malware at artifact creation ,0.061111111,3
+O,6.2,, improperly select audit samples,,
+T, 6.2.1,X220, select audit units before election ,0.072222222,3
+T, 6.2.2,X221, select non-randomly ,0.072222222,3
+T, 6.2.3,X222, use subverted selection method ,0.096666667,3
+T, 6.2.4,X223, ignore proper selections,0.111111111,3
+O,6.3,, use poor audit process,,
+T, 6.3.1,X224, misguide auditors,0.077777778,3
+T, 6.3.2,X225, audit insufficient sample,0.072222222,3
+T, 6.3.3,X226, exploit variation in batch sizes,0.077777778,3
+T, 6.3.4,X227, establish single contest audit rule ,0.061111111,3
+T, 6.3.5,X228, arrange contest audit,0.105555556,3
+T, 6.3.6,X229, select audited items before commit ,0.077777778,3
+T, 6.3.7,X230, tamper with audit totals,0.072222222,3
+T, 6.3.8,X231, avoid correction,0.072222222,3
+T, 6.3.9,X232, overwhelm audit observers ,0.066666667,3
+T,6.4,X233, commit auditing error,0.077777778,3
+T,6.5,X234, compromise auditors ,0.055555556,3
+O,6.6,, attack audit results,,
+T, 6.6.1,X235, mishandle media,0.077777778,3
+T, 6.6.2,X236, add fraudulent result data ,0.055555556,3
+O, 6.6.3,, attack audit data,,
+T, 6.6.3.1,X237, modify deliberately,0.068888889,3
+T, 6.6.3.2,X238, modify unintentionally,0.122222222,3
+T, 6.6.3.3,X239, modify via malware attack ,0.066666667,3
+T, 6.6.4,X240, publish bogus audit results,0.088888889,3
+O,7,, disrupt operations,,
+O,7.1,, disruption from natural events ,,
+T, 7.1.1,X241, natural disaster,0.155555556,2
+T, 7.1.2,X242, severe weather,0.102222222,2
+O,7.2,, disruption from environmental events ,,
+O, 7.2.1,, environmental failures,,
+T, 7.2.1.1,X243, experience a fire,0.102222222,2
+T, 7.2.1.2,X244, experience power disruptions ,0.068888889,2
+T, 7.2.1.3,X245, experience effects of humidity,0.116666667,2
+T, 7.2.2,X246, hazardous accidents,0.046666667,2
+O,7.3,, disruption from human-created events ,,
+O, 7.3.1,, that damage equipment,,
+T, 7.3.1.1,X247, render e-voting equipment inoperable ,0.072222222,2
+T, 7.3.1.2,X248, render removable media not working ,0.066666667,2
+T, 7.3.1.3,X249, render paper sensor inoperable,0.061111111,2
+T, 7.3.2,X250, deploy faulty equipment,0.088888889,2
+T, 7.3.3,X251, with environmental effects ,0.055555556,2
+O,7.4,, discourage voter participation,,
+T, 7.4.1,X252, misinform voters,0.068888889,2
+T, 7.4.2,X253, threaten personal violence ,0.061111111,2
+T, 7.4.3,X254, threaten mass violence,0.052222222,2
+T, 7.4.4,X255, commit an act of terror,0.057777778,2
+T, 7.4.5,X256, intimidate to suppress turnout,0.105555556,2
